@@ -9,7 +9,7 @@ def findTotalDistance(filename):
     numpy.sort(arr1)
     numpy.sort(arr2)
 
-    total = numpy.sum(numpy.subtract(arr1, arr2))
+    total = numpy.sum(numpy.absolute(numpy.subtract(arr1, arr2)))
 
     return abs(total)
 
