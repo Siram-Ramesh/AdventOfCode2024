@@ -1,7 +1,7 @@
 import unittest
 import numpy
 import pandas as pd
-import TestHistorianHisteria as thh
+import HistorianHysteria as hh
 
 class TestHistorianHisteriaPart1(unittest.TestCase):
 
@@ -10,7 +10,7 @@ class TestHistorianHisteriaPart1(unittest.TestCase):
         self.arr1 = df[[0]].to_numpy()
         self.arr2 = df[[1]].to_numpy()
         
-        dist = thh.findTotalDistance(arr1, arr2)
+        dist = hh.findTotalDistance(arr1, arr2)
         unittest.assertEqual(dist, 7)
 
     def test_NoDiff(self):
@@ -18,7 +18,7 @@ class TestHistorianHisteriaPart1(unittest.TestCase):
         self.arr1 = df[[0]].to_numpy()
         self.arr2 = df[[1]].to_numpy()
         
-        dist = thh.findTotalDistance(arr1, arr2)
+        dist = hh.findTotalDistance(arr1, arr2)
         unittest.assertEqual(dist, 0)
 
 if __name__ == '__main__':
