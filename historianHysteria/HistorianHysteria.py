@@ -2,7 +2,7 @@ import numpy
 import pandas
 
 def findTotalDistance(filename):
-    df = pandas.read_csv(filename, header=None, delimiter='   ')
+    df = pandas.read_csv(filename, header=None, delimiter='   ', engine='python')
     arr1 = df.iloc[:,0].to_numpy()
     arr2 = df.iloc[:,1].to_numpy()
 
