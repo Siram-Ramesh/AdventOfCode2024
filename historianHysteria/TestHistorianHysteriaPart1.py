@@ -13,5 +13,9 @@ class TestHistorianHisteriaPart1(unittest.TestCase):
         dist = hh.findTotalDistance('testcases/noDiff.txt')
         self.assertEqual(dist, 0)
 
+    def test_AbsVal(self):
+        dist = hh.findTotalDistance('testcases/absVal.txt')
+        self.assertEqual(dist, 9)
+
 if __name__ == '__main__':
     unittest.main()
