@@ -6,8 +6,12 @@ def findTotalDistance(filename):
     arr1 = df.iloc[:,0].to_numpy()
     arr2 = df.iloc[:,1].to_numpy()
 
-    numpy.sort(arr1)
-    numpy.sort(arr2)
+    # print(arr1[:5])
+
+    arr1 = numpy.sort(arr1)
+    arr2 = numpy.sort(arr2)
+
+    # print(arr1[:5])
 
     total = numpy.sum(numpy.absolute(numpy.subtract(arr1, arr2)))
 
