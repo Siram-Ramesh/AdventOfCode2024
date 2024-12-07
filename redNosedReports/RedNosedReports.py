@@ -27,3 +27,6 @@ def isReportValid(row) -> bool:
             return False
     return True
 
+if __name__ == '__main__':
+    numValid = countValidReports('realData')
+    print('numValidReports: ', numValid)
