@@ -36,9 +36,9 @@ def findSimilarity(filename):
     total2 = 0
     for index, row in df.iterrows():
         if row[1] in map1:
-            total1 += row[1]*map1[row[1]]
+            total1 += abs(row[1])*map1[row[1]]
         if row[0] in map2:
-            total2 += row[0]*map2[row[0]]
+            total2 += abs(row[0])*map2[row[0]]
 
     if total1 != total2:
         raise Exception('The similarity scores of the 2 arrays are different!')
