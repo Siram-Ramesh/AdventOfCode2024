@@ -49,4 +49,7 @@ def findSimilarity(filename):
 if __name__ == '__main__':
     
     dist = findTotalDistance('realData')
-    print(dist)
+    print('total distance: ', dist)
+
+    sim = findSimilarity('realData')
+    print('SimilarityScore: ', sim)
